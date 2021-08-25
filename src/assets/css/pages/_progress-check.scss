@@ -1,0 +1,149 @@
+.p-progress-check {
+  $color-rc: #d92020; // 已接收
+  $color-co: #fb6400; // 已轉檔
+  $color-pr: #fbb800; // 已列印
+  $color-bd: #00b600; // 已膠裝
+  $color-ck: #00ade3; // 已檢驗
+  $color-pa: #085261; // 已裝封
+  $color-po: #5b00ab; // 已交寄
+  .search-bar {
+    align-items: flex-end;
+    display: flex;
+
+    .ivu-form-item {
+      margin-bottom: 0;
+    }
+  }
+
+  .info-bar {
+    display: flex;
+    height: 50px;
+    padding-top: 20px;
+
+    .progress-info {
+      border-radius: 5px;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 14px;
+      height: 25px;
+      line-height: 25px;
+      margin-right: 15px;
+      opacity: 0.8;
+      padding: 0 10px;
+      text-align: center;
+      transition: all 0.3s;
+
+      &--RC {
+        background-color: $color-rc;
+      }
+
+      &--CO {
+        background-color: $color-co;
+      }
+
+      &--PR {
+        background-color: $color-pr;
+        color: darken($color-pr, 30%);
+      }
+
+      &--BD {
+        background-color: $color-bd;
+      }
+
+      &--CK {
+        background-color: $color-ck;
+      }
+
+      &--PA {
+        background-color: $color-pa;
+      }
+
+      &--PO {
+        background-color: $color-po;
+      }
+    }
+  }
+
+  .item-container {
+    @include scrollbar;
+
+    border: 1px solid transparent;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    max-height: calc(100vh - 230px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 15px;
+    padding-right: 0;
+    position: relative;
+
+    .items {
+      border: 1px solid transparent;
+      border-left: 15px solid transparent;
+      height: 50px;
+      margin-bottom: 15px;
+      margin-right: 15px;
+      width: 160px;
+
+      &__title,
+      &__content {
+        padding-left: 10px;
+      }
+
+      &__content {
+        color: #b9b9b9;
+      }
+
+      &--RC {
+        border-color: $color-rc;
+        border-left-color: $color-rc;
+      }
+
+      &--CO {
+        border-color: $color-co;
+        border-left-color: $color-co;
+      }
+
+      &--PR {
+        border-color: $color-pr;
+        border-left-color: $color-pr;
+      }
+
+      &--BD {
+        border-color: $color-bd;
+        border-left-color: $color-bd;
+      }
+
+      &--CK {
+        border-color: $color-ck;
+        border-left-color: $color-ck;
+      }
+
+      &--PA {
+        border-color: $color-pa;
+        border-left-color: $color-pa;
+      }
+
+      &--PO {
+        border-color: $color-po;
+        border-left-color: $color-pa;
+      }
+    }
+
+    .no-data,
+    .no-oursouring {
+      font-size: 20px;
+      margin: auto;
+    }
+
+    .no-oursouring {
+      color: #ff0000;
+    }
+
+    &--border {
+      border-color: $border-color;
+    }
+  }
+}

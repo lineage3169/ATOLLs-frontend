@@ -1,0 +1,45 @@
+.p-pending-list {
+  height: calc(100% + 60px);
+  position: relative;
+
+  .content {
+    height: calc(100vh - 50px);
+  }
+
+  .error-msg {
+    color: #ff6c0a;
+    font-size: 24px;
+    left: 0;
+    position: absolute;
+    top: calc(50% - 44px);
+  }
+
+  .info-bar {
+    align-items: center;
+    display: flex;
+    height: 40px;
+    justify-content: flex-start;
+    position: relative;
+
+    &--warning {
+      color: rgb(219, 0, 0);
+      font-size: 14px;
+      position: absolute;
+      right: 95px;
+      top: 10px;
+    }
+
+    &__total-records {
+      color: #707070;
+      font-size: 14px;
+      padding-left: 15px;
+      text-align: left;
+    }
+
+    &__color-info {
+      border-radius: 3px;
+      margin: 0 5px;
+      padding: 2px 10px;
+    }
+  }
+}

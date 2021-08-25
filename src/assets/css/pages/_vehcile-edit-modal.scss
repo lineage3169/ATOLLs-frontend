@@ -1,0 +1,27 @@
+.vehcile-edit-modal {
+  .form-generate__items {
+    width: calc(100% / 3);
+  }
+
+  .form-generate__items__label {
+    color: #262626;
+    font-weight: bold;
+  }
+
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .info__item {
+    margin-bottom: 20px;
+    width: calc(100% / 3);
+
+    &__label {
+      color: #262626;
+      font-size: 16px;
+      font-weight: bold;
+      height: 25px;
+    }
+  }
+}

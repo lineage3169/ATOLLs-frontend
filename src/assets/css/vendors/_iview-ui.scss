@@ -1,0 +1,212 @@
+// i View  分頁
+.ivu-tabs-nav {
+  font-size: 18px;
+
+  .ivu-tabs-tab-active {
+    color: $light-color !important;
+    font-weight: bold;
+  }
+
+  .ivu-tabs-tab:hover {
+    color: $light-color !important;
+  }
+}
+
+.ivu-tabs-bar {
+  border-bottom: unset !important;
+  margin-bottom: 5px !important;
+
+  .ivu-tabs-nav-container {
+    font-size: 16px;
+  }
+}
+
+.ivu-tabs-ink-bar {
+  background-color: $light-color !important;
+}
+// i View  table
+.ivu-table th {
+  background-color: #d3eaef !important;
+  font-size: 14px;
+}
+
+.ivu-table-body {
+  @include scrollbar;
+}
+
+.ivu-table-row-hover td {
+  background-color: #0b758a !important;
+  color: $text-color-light;
+
+  button {
+    background-color: transparent !important;
+    color: #ffffff;
+    height: 30px;
+    min-width: 55px;
+
+    &:hover {
+      background-color: #0b758a !important;
+      border: 1px solid #ffffff;
+      box-shadow: 0 0 5px #ffffff !important;
+      color: #ffffff;
+    }
+
+    &:disabled {
+      background: rgba(255, 255, 255, 0.65) !important;
+      border-color: transparent !important;
+      color: #919191 !important;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.65) !important;
+        box-shadow: none !important;
+        color: #919191 !important;
+      }
+    }
+  }
+
+  .btn--error-outline {
+    background-color: #db4848 !important;
+    color: #ffffff !important;
+
+    &:hover {
+      background-color: darken(#e24e4e, 15%) !important;
+      color: #ffffff !important;
+    }
+  }
+}
+
+.ivu-table-tbody .table-warning-row td {
+  background-color: #fff6c2;
+}
+
+.ivu-table-tbody .table-error-row td {
+  background-color: #ffdcdc;
+}
+
+.ivu-table-tbody .table-fatal-row td {
+  background-color: #f9dbff;
+}
+
+.ivu-table-row p {
+  margin-bottom: 0 !important;
+}
+
+// Modal Close Btn
+.ivu-modal-close .ivu-icon-ios-close {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.ivu-modal-wrap {
+  overflow-wrap: break-word;
+}
+
+.ivu-modal-header {
+  background-color: $primary-color;
+  border-radius: 6px 6px 0 0;
+  color: $text-color-light;
+
+  &--warning .ivu-modal-header {
+    background-color: #fb6400;
+  }
+
+  &--warning .ivu-modal-header-inner {
+    color: #ffffff;
+  }
+}
+
+.ivu-modal-close {
+  .ivu-icon {
+    &:hover {
+      color: $text-color-light !important;
+    }
+  }
+}
+
+.ivu-modal-confirm-body {
+  overflow: auto;
+}
+
+.ivu-select-dropdown {
+  @include scrollbar;
+}
+
+.vertical-center-modal {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  .ivu-modal {
+    top: 0;
+  }
+}
+// Radio Group Btn
+.ivu-radio-group-button .ivu-radio-wrapper-checked {
+  background-color: $primary-color !important;
+  border: 1px solid $light-color !important;
+  color: #ffffff !important;
+}
+
+.pm-module {
+  .ivu-tabs-tab-active,
+  .ivu-tabs-tab:hover {
+    color: #00adef !important;
+  }
+
+  .ivu-tabs-ink-bar {
+    background-color: #00adef !important;
+  }
+
+  .ivu-table th {
+    background-color: #484848 !important;
+    color: #ffffff;
+  }
+
+  .ivu-table-row-hover td {
+    background-color: #262626 !important;
+
+    button:hover {
+      background-color: #00adef !important;
+    }
+
+    .btn--warning:hover {
+      background-color: darken(#fb6400, 10%) !important;
+    }
+  }
+
+  .ivu-table-stripe .ivu-table-body tr:nth-child(2n) td,
+  .ivu-table-stripe .ivu-table-fixed-body tr:nth-child(2n) td {
+    background-color: #e5e5e5;
+  }
+
+  .ivu-modal-header {
+    background-color: #262626;
+  }
+
+  .confirm--error {
+    .ivu-modal-header {
+      background-color: #d92020;
+    }
+  }
+
+  .ivu-btn-primary {
+    background-color: rgba(38, 38, 38, 0.9);
+    border-color: rgba(38, 38, 38, 0.9);
+
+    &:hover {
+      background-color: #262626 !important;
+    }
+  }
+
+  .ivu-switch-checked {
+    background-color: #00adef;
+    border-color: #00adef;
+  }
+
+  .ivu-upload-select {
+    width: 100%;
+
+    .ivu-btn {
+      width: 100%;
+    }
+  }
+}

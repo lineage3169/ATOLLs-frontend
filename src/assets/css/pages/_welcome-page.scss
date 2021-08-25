@@ -1,0 +1,84 @@
+.p-welcome-page {
+  position: relative;
+
+  .groups-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .groups-item {
+    margin-right: 50px;
+
+    &__label {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    &__content {
+      background-color: #000000;
+      border: 1px solid #bababa;
+      border-radius: 5px;
+      color: #ffffff;
+      height: 333px;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      position: relative;
+      width: 150px;
+
+      img {
+        width: 100%;
+      }
+
+      &__title {
+        font-size: 18px;
+        height: 35px;
+        left: 0;
+        padding: 0 10px;
+        padding-top: 10px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 5;
+      }
+
+      &__info {
+        height: 30px;
+        left: 0;
+        padding: 0 10px;
+        position: absolute;
+        top: 35px;
+        width: 100%;
+        z-index: 5;
+      }
+
+      &__button {
+        align-items: center;
+        bottom: 0;
+        display: flex;
+        height: 50px;
+        justify-content: center;
+        left: 0;
+        padding: 10px;
+        position: absolute;
+        width: 100%;
+        z-index: 5;
+      }
+    }
+  }
+
+  .groups-item__content__button .btn {
+    font-size: 12px;
+    height: 25px !important;
+    width: 80px;
+  }
+
+  .groups-item__content__button .btn--outline {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border-color: #ffffff !important;
+    color: #ffffff !important;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.7) !important;
+    }
+  }
+}

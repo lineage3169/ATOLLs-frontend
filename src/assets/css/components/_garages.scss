@@ -1,0 +1,63 @@
+.garages-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  &--mobile {
+    @include scrollbar;
+
+    flex-direction: column;
+    flex-wrap: unset;
+    height: calc(100vh - 213px);
+    overflow-y: auto;
+  }
+}
+
+.garages {
+  background: linear-gradient(45deg, #232323, 60%, #1c616f);
+  border-radius: 5px;
+  color: #ffffff;
+  height: 90px;
+  margin-bottom: 40px;
+  margin-right: 40px;
+  padding: 10px;
+  width: 250px;
+
+  &__label {
+    font-size: 20px;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__content__count {
+    align-items: flex-end;
+    display: flex;
+    width: 60px;
+  }
+
+  &__content__info {
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    width: calc(100% - 60px);
+
+    span {
+      font-size: 30px;
+      margin: 0 5px;
+      margin-bottom: -5px;
+    }
+  }
+
+  &--full {
+    background: linear-gradient(45deg, #cf4102, 60%, #ff8000);
+  }
+
+  &--mobile {
+    margin-bottom: 20px;
+    margin-right: 0;
+    min-width: 250px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,28 @@
+.m-form-company {
+  .ivu-form-item-content {
+    display: flex;
+  }
+
+  .ip-address {
+    width: calc((100% - 45px) / 4);
+
+    .ivu-input-number-input {
+      text-align: center;
+    }
+
+    .ivu-input-number-handler-wrap {
+      display: none;
+    }
+  }
+
+  .dot {
+    display: block;
+    font-size: 26px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    padding-top: 6px;
+    text-align: center;
+    width: 15px;
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "extends": ["stylelint-config-standard", "stylelint-config-sass-guidelines"],
+    "ignoreFiles": ["dist/**/*"],
+    "rules": {
+        "max-nesting-depth": 4,
+        "selector-max-compound-selectors": 5,
+        "color-hex-length": "long",
+        "selector-class-pattern": "[a-z-]+|[a-z__]+",
+        "no-descending-specificity": null
+    }
+}

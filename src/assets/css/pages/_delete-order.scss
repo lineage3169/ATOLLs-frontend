@@ -1,0 +1,60 @@
+.p-delete-order {
+  .icon--unselected {
+    color: #bababa;
+  }
+
+  .tool-bar {
+    display: flex;
+    padding-top: 20px;
+
+    .search-bar {
+      align-items: flex-end;
+      display: flex;
+      width: calc(100% - 150px);
+    }
+
+    .action {
+      width: 150px;
+    }
+  }
+
+  .model-content {
+    display: flex;
+    padding: 20px;
+  }
+
+  .recycle-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .recycle-items {
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px #707070;
+    color: #707070;
+    cursor: pointer;
+    display: flex;
+    height: 45px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    padding: 5px 10px;
+    width: 220px;
+
+    &__title {
+      @include ellipsis;
+
+      font-size: 20px;
+      line-height: 35px;
+      width: calc(100% - 30px);
+    }
+
+    &__icon {
+      align-items: center;
+      display: flex;
+      font-size: 20px;
+      justify-content: center;
+      width: 40px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.loader {
+  animation: loading 1.2s linear infinite;
+  border: 3px solid $primary-color;
+  border-radius: 50%;
+  border-top: 3px solid transparent;
+  height: 20px;
+  left: calc(50% - 10px);
+  position: absolute;
+  top: calc(50% - 10px);
+  width: 20px;
+
+  &--pm {
+    border: 3px solid #00adef;
+    border-top: 3px solid transparent;
+  }
+}

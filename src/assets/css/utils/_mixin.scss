@@ -1,0 +1,47 @@
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin scrollbar {
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $scrollbar-track-color;
+
+    &:hover {
+      background-color: darken($scrollbar-track-color, 5%);
+    }
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $scrollbar-thumb-color;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: darken($scrollbar-thumb-color, 10%);
+    }
+  }
+}
+
+@mixin scrollbar--thin {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $scrollbar-thumb-color;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: #ffffff;
+    }
+  }
+}

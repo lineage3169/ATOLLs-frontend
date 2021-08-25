@@ -1,0 +1,23 @@
+.c-search-row-expand {
+  display: flex;
+  flex-wrap: wrap;
+
+  .expand {
+    &__area {
+      display: flex;
+      height: 25px;
+      width: calc(100% / 3);
+
+      &__title {
+        font-weight: bold;
+        min-width: 100px;
+        padding-right: 5px;
+        text-align: right;
+      }
+
+      &__content {
+        padding-left: 5px;
+      }
+    }
+  }
+}

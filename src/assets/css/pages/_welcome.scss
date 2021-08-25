@@ -1,0 +1,43 @@
+.p-welcome {
+  align-items: center;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-name: bg-color-anim;
+  background-color: $primary-color;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  transition: all 0.2s;
+  width: 100%;
+
+  .container {
+    .logo img {
+      width: 300px;
+    }
+
+    .title {
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+
+.pm-module {
+  .p-welcome {
+    animation-name: none;
+    background-color: #262626;
+    position: relative;
+
+    .powered-by {
+      bottom: 15px;
+      color: #848484;
+      position: absolute;
+    }
+  }
+}

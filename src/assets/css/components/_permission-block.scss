@@ -1,0 +1,22 @@
+.c-permission-block {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+
+  &__msg {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  &--white {
+    background-color: #ffffff;
+  }
+}

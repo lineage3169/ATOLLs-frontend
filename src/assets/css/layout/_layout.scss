@@ -1,0 +1,10 @@
+.content__view {
+  transition: background-color 0.8s;
+
+  .l-view {
+    min-height: 100vh;
+    padding: 10px 15px;
+    padding-top: 5px;
+    width: 100%;
+  }
+}

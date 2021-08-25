@@ -1,0 +1,78 @@
+.c-datepicker {
+  width: 100%;
+
+  .menu-item {
+    margin: -5px;
+    padding: 5px 0 !important;
+  }
+
+  .dates {
+    &-container {
+      background-color: #ffffff;
+      border: 1px solid #707070;
+      border-radius: 5px;
+      box-shadow: 2px 5px 5px #707070;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px;
+      position: fixed;
+      width: 225px;
+      z-index: 1010;
+    }
+
+    &-item {
+      border-radius: 5px;
+      cursor: pointer;
+      height: 25px;
+      line-height: 25px;
+      margin: 2px;
+      text-align: center;
+      width: 25px;
+
+      &:hover {
+        background-color: $background-color;
+      }
+
+      &--active {
+        background-color: $primary-color !important;
+        border: unset !important;
+        box-shadow: none !important;
+        color: #ffffff !important;
+      }
+
+      &--disable {
+        background-color: #f0f0f0 !important;
+        border: unset !important;
+        box-shadow: none !important;
+        color: #cecece !important;
+        cursor: not-allowed;
+      }
+
+      &--isMultiSelect {
+        border: 1px solid $primary-color;
+        box-shadow: 0 0 2px $primary-color;
+      }
+    }
+  }
+
+  .btn-conatiner {
+    width: 100%;
+
+    .btn {
+      height: 30px !important;
+      padding: 0 10px !important;
+    }
+  }
+
+  .datepicker {
+    &__wrap {
+      background-color: transparent;
+      height: 100%;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1005;
+    }
+  }
+}

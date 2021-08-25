@@ -1,0 +1,156 @@
+.p-config {
+  // user & group
+  padding-top: 20px;
+  position: relative;
+
+  .tools {
+    display: flex;
+    margin-bottom: 20px;
+
+    .records {
+      line-height: 30px;
+      margin-left: 15px;
+    }
+  }
+
+  .groups-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+
+  .group__item {
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 100px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    padding: 10px 20px;
+    position: relative;
+    transition: all 0.3s;
+    width: 250px;
+
+    &:hover {
+      .group__item__action {
+        opacity: 1;
+      }
+    }
+
+    &--add {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+
+      &:hover {
+        background-color: $btn-bg-color;
+
+        .add__item {
+          color: #ffffff;
+        }
+      }
+    }
+
+    &__alias {
+      @include ellipsis;
+
+      font-size: 18px;
+    }
+
+    &__name {
+      @include ellipsis;
+
+      color: #adadad;
+      font-size: 14px;
+      height: 18px;
+      width: 100%;
+    }
+
+    &__info {
+      margin-top: 10px;
+
+      .people {
+        display: flex;
+        height: 16px;
+        justify-content: flex-end;
+        line-height: 16px;
+        margin-right: -10px;
+
+        .icon {
+          color: #707070;
+          font-size: 16px;
+          margin-right: 5px;
+        }
+
+        .count {
+          font-size: 12px;
+        }
+      }
+
+      .space {
+        display: flex;
+        height: 18px;
+        justify-content: flex-end;
+        line-height: 18px;
+        margin-right: -10px;
+        position: relative;
+
+        .icon {
+          align-items: center;
+          background-color: $primary-color;
+          border-radius: 3px;
+          color: #ffffff;
+          display: flex;
+          font-weight: bold;
+          height: 18px;
+          justify-content: center;
+          margin-right: 5px;
+          width: 18px;
+        }
+
+        .count {
+          font-size: 14px;
+        }
+      }
+    }
+
+    &__action {
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 5px;
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  .add__item {
+    color: #8d8d8d;
+    text-align: center;
+
+    .icon {
+      font-size: 32px;
+    }
+  }
+
+  .action__item {
+    color: #ffffff;
+    opacity: 0.7;
+    text-align: center;
+    transition: all 0.3s;
+
+    .icon {
+      font-size: 28px;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.p-mobile-main {
+  padding: 15px;
+  padding-top: 20px;
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      border: 3px solid transparent;
+      border-radius: 5px;
+      color: #262626;
+      cursor: pointer;
+      margin: 30px 10px;
+      width: calc((100% - 60px) / 3);
+
+      &__icon {
+        align-items: center;
+        display: flex;
+        font-size: 36px;
+        height: 50px;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+
+        img {
+          height: 36px;
+          width: 36px;
+        }
+      }
+
+      &__label {
+        text-align: center;
+      }
+
+      &:hover {
+        border-color: #00adef;
+      }
+    }
+  }
+}

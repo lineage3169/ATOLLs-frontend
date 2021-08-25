@@ -1,0 +1,18 @@
+.id-list {
+  @include scrollbar;
+
+  height: calc(100vh - 285px);
+  margin-top: 20px;
+  overflow: hidden;
+  overflow-y: auto;
+
+  &__item {
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    width: calc(100% - 15px);
+  }
+}

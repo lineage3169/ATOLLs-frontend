@@ -1,0 +1,33 @@
+.gadgets-modal {
+  .gadgets {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gadgets-item {
+    display: flex;
+    height: 50px;
+    width: calc(100% / 3);
+
+    &__status {
+      align-items: center;
+      display: flex;
+      font-size: 20px;
+      justify-content: center;
+      width: 30px;
+    }
+
+    &__status--true {
+      color: #11b136;
+    }
+
+    &__status--false {
+      color: #d92020;
+    }
+
+    &__label {
+      line-height: 50px;
+      width: calc(100% - 30px);
+    }
+  }
+}

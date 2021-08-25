@@ -1,0 +1,9 @@
+.p-index {
+  display: flex;
+
+  .content {
+    height: 100vh;
+    overflow: auto;
+    width: 100%;
+  }
+}

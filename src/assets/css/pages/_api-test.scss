@@ -1,0 +1,164 @@
+.m-api-test {
+  padding: 10px;
+  padding-top: 20px;
+
+  .panal {
+    background-color: #ffffff;
+    border: 1px solid #bababa;
+    border-radius: 5px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    position: relative;
+    width: 100%;
+
+    &__title {
+      color: #000000;
+      font-size: 18px;
+      padding-left: 30px;
+    }
+  }
+
+  .tool-bar {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+
+    &__url {
+      align-items: center;
+      background-color: #ffffff;
+      border: 1px solid #bababa;
+      border-radius: 5px;
+      display: flex;
+      height: 40px;
+      margin-right: 20px;
+      padding-left: 10px;
+      width: calc(100% - 170px);
+
+      .ivu-select-selection,
+      .ivu-select-input {
+        border: unset;
+        box-shadow: none;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      .ivu-input {
+        border: 1px solid #bababa;
+        border-radius: 0 5px 5px 0;
+        height: 40px;
+        margin-left: 2px;
+        width: 100%;
+      }
+    }
+  }
+
+  .params-tool {
+    display: flex;
+    padding: 20px;
+
+    &__keyInput {
+      width: 300px;
+    }
+
+    &__valueInput {
+      width: calc(100% - 375px);
+    }
+  }
+
+  .params-list {
+    @include scrollbar;
+
+    max-height: 220px;
+    overflow-y: auto;
+    padding: 20px;
+    padding-top: 0;
+
+    &__item {
+      display: flex;
+      height: 40px;
+      position: relative;
+
+      &__key,
+      &__value {
+        @include ellipsis;
+
+        line-height: 40px;
+      }
+
+      &__key {
+        padding: 0 10px;
+        width: 300px;
+      }
+
+      &__value {
+        padding: 0 2px;
+        width: calc(100% - 375px);
+
+        input {
+          background-color: transparent;
+          border: unset;
+        }
+      }
+
+      &__delete {
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.1);
+        display: none;
+        font-size: 30px;
+        height: 100%;
+        justify-content: center;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 30px;
+        z-index: 10;
+      }
+
+      &:hover {
+        .params-list__item__delete {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  .response-area {
+    padding: 10px 30px;
+    word-break: break-all;
+    word-wrap: break-word;
+
+    pre {
+      width: 100%;
+    }
+
+    code {
+      white-space: pre-wrap;
+      width: 100%;
+    }
+
+    span {
+      line-height: 30px;
+      padding: 3px 0;
+    }
+  }
+
+  .radioboxBar {
+    align-items: flex-end;
+    display: flex;
+    height: 35px;
+
+    .ivu-upload {
+      height: 33px;
+    }
+
+    .file-info {
+      font-size: 16px;
+      padding-left: 15px;
+    }
+  }
+}

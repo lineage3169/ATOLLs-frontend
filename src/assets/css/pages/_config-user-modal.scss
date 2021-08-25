@@ -1,0 +1,89 @@
+.m-config-user-modal {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+
+    &__items {
+      padding: 5px;
+      width: calc(100% / 3);
+
+      &__label {
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+
+      &__input {
+        font-size: 16px !important;
+        width: 100%;
+      }
+
+      .ivu-form-item {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+
+  .prem {
+    display: flex;
+    margin-bottom: 25px;
+
+    &__items {
+      padding: 5px;
+      width: calc(100% / 3);
+
+      &__label {
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .checkbox {
+    width: 100%;
+
+    &__all {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+
+    &__area {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+      padding: 0 10px;
+      padding-bottom: 5px;
+      padding-left: 55px;
+      width: 100%;
+    }
+
+    &__type-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      text-transform: capitalize; //字首大寫
+    }
+
+    &__area-title {
+      border-left: 5px solid lighten($light-color, 20%);
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      margin-left: 30px;
+      padding-left: 5px;
+      text-transform: capitalize;
+    }
+
+    &__items {
+      @include ellipsis;
+
+      text-transform: capitalize;
+      width: calc(100% / 4);
+    }
+  }
+
+  .alert {
+    color: #d80000;
+    padding-left: 10px;
+  }
+}

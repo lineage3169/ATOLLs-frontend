@@ -1,0 +1,13 @@
+.info-result {
+  &__item {
+    &__label {
+      color: #262626;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    &__content {
+      color: #6d6d6d;
+    }
+  }
+}

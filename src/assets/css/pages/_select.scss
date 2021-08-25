@@ -1,0 +1,47 @@
+.c-select {
+  position: relative;
+
+  .selcet-container {
+    @include scrollbar;
+
+    background-color: #ffffff;
+    border: 1px solid #e9e9e9;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px #707070;
+    left: 0;
+    overflow-y: auto;
+    position: absolute;
+    top: 35px;
+    width: 100%;
+    z-index: 200;
+
+    li {
+      cursor: pointer;
+      padding: 10px;
+
+      &:hover {
+        background-color: hsla(190, 86%, 35%, 0.05);
+      }
+    }
+  }
+
+  .selcet__wrap {
+    background-color: transparent;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 199;
+  }
+
+  .down-arrow {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  input {
+    cursor: pointer;
+  }
+}

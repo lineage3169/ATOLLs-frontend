@@ -1,0 +1,25 @@
+.m-dispatch-event-modal {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+
+    &__items {
+      margin-bottom: 20px;
+      padding: 5px;
+      width: calc(100% / 3);
+
+      &__label {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      &__content {
+        @include ellipsis;
+
+        color: #707070;
+      }
+    }
+  }
+}

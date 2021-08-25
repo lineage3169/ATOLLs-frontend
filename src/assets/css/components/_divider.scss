@@ -1,0 +1,19 @@
+.c-divider {
+  align-items: center;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+
+  hr {
+    width: 100%;
+  }
+
+  &__title {
+    background-color: #ffffff;
+    padding: 2px 10px;
+    position: absolute;
+    z-index: 5;
+  }
+}

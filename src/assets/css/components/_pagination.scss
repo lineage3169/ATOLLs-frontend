@@ -1,0 +1,22 @@
+.pagination {
+  align-items: center;
+  display: inline-flex;
+
+  input {
+    width: 42px !important;
+  }
+
+  &__skip-icon {
+    align-items: center;
+    color: #868686;
+    cursor: pointer;
+    display: flex;
+    height: 24px;
+    justify-content: center;
+    width: 24px;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

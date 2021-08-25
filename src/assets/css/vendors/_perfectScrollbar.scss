@@ -1,0 +1,27 @@
+.ps {
+  .ps__rail-y {
+    background-color: transparent !important;
+    opacity: 0.5;
+    width: 5px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: transparent !important;
+      opacity: 1;
+      width: 5px;
+
+      .ps__thumb-y {
+        background-color: #ffffff;
+        opacity: 0.9;
+        width: 5px;
+      }
+    }
+
+    .ps__thumb-y {
+      background-color: #ffffff;
+      right: 0;
+      width: 5px !important;
+    }
+  }
+}

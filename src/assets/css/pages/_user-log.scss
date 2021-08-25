@@ -1,0 +1,54 @@
+.p-user-log {
+  position: relative;
+
+  .tool {
+    border: 1px solid #bababa;
+    border-radius: 5px;
+    padding: 10px;
+
+    .search {
+      align-items: center;
+      display: flex;
+      height: 45px;
+
+      &__label {
+        line-height: 45px;
+        margin-right: 15px;
+      }
+    }
+
+    .user-list {
+      @include scrollbar;
+
+      display: flex;
+      height: 60px;
+      margin-top: 10px;
+      overflow-x: auto;
+
+      &__item {
+        @include ellipsis;
+
+        border: 1px solid #bababa;
+        border-radius: 5px;
+        cursor: pointer;
+        flex-shrink: 0;
+        height: 30px;
+        margin-right: 15px;
+        padding: 5px;
+        text-align: center;
+        transition: all 0.3s;
+        width: 100px;
+
+        &:hover {
+          background-color: #707070;
+          color: #ffffff;
+        }
+
+        &--active {
+          background-color: #262626;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

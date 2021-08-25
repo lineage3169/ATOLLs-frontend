@@ -1,0 +1,40 @@
+.c-colorpicker {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+  margin-left: -5px;
+  width: 160px;
+
+  .color {
+    &__item {
+      align-items: center;
+      cursor: pointer;
+      display: flex;
+      height: 20px;
+      justify-content: center;
+      margin: 3px;
+      width: 20px;
+
+      span {
+        border-radius: 100px;
+        display: block;
+        font-size: 28px;
+        height: 18px;
+        position: relative;
+        width: 18px;
+
+        &:hover {
+          height: 20px;
+          width: 20px;
+        }
+      }
+
+      i {
+        color: #ffffff;
+        left: -5px;
+        position: absolute;
+        top: -4px;
+      }
+    }
+  }
+}

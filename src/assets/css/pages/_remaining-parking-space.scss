@@ -1,0 +1,14 @@
+.p-remaining-parking-space {
+  padding-top: 20px;
+  position: relative;
+
+  .tools {
+    display: flex;
+    margin-bottom: 20px;
+
+    .records {
+      line-height: 30px;
+      margin-left: 15px;
+    }
+  }
+}

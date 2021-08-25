@@ -1,0 +1,38 @@
+describe('出庫', () => {
+    beforeEach(() => {
+        cy.viewport(288, 640)
+    })
+    it('訪問頁面', () => {
+        cy.visit('/m-frontend/vehicle/leaving')
+    })
+    it('介面檢查', () => {
+        cy.get('.title')
+            .contains('出庫')
+        cy.get('.ivu-form-item-label')
+            .contains('QRcode')
+    })
+    it('出庫', () => {
+        cy.get('#qrcode-input')
+            .type('e2eTest')
+        cy.get('.btn')
+            .click()
+        cy.get('.ivu-modal-confirm-body > div')
+            .contains('車輛已出庫')
+        cy.get('.ivu-modal-confirm-footer > .ivu-btn')
+            .click()
+    })
+    it('查詢', () => {
+        cy.visit('/frontend')
+        cy.viewport(1366, 768)
+        cy.get('#menu-item-0 > .c-menu__items__title')
+            .click()
+        cy.get(':nth-child(2) > .ivu-input-wrapper > .ivu-input')
+            .type('e2eTest')
+        cy.get('.ivu-btn-primary')
+            .click()
+        cy.get('.ivu-table-body > table > .ivu-table-tbody > :nth-child(1) > :nth-child(1)')
+            .click()
+        cy.get('.table')
+            .contains('出庫時間')
+    })
+})

@@ -1,0 +1,21 @@
+.l-footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: $footer-height;
+  padding: 10px;
+  position: relative;
+
+  .copyright {
+    color: #727272;
+  }
+
+  &::before {
+    border: 1px solid $border-color;
+    content: '';
+    left: 50px;
+    position: absolute;
+    top: 0;
+    width: calc(100% - 100px);
+  }
+}

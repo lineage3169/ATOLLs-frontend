@@ -1,0 +1,28 @@
+describe('設定', () => {
+    beforeEach(() => {
+        cy.viewport(288, 640)
+    })
+    it('訪問頁面', () => {
+        cy.visit('/m-frontend/config')
+    })
+    it('介面檢查', () => {
+        cy.get(':nth-child(1) > .panal__title')
+            .contains('帳號資訊')
+        cy.get(':nth-child(2) > .panal__items__title')
+            .contains('使用者名稱')
+        cy.get(':nth-child(1) > :nth-child(3) > .panal__items__title')
+            .contains('名字')
+        cy.get(':nth-child(1) > :nth-child(4) > .panal__items__title')
+            .contains('姓氏')
+        cy.get(':nth-child(5) > .panal__items__title')
+            .contains('電子郵件')
+        cy.get('.cur-point > .panal__items__title')
+            .contains('變更密碼')
+        cy.get(':nth-child(2) > .panal__title')
+            .contains('帳號設定')
+        cy.get(':nth-child(2) > :nth-child(3) > .panal__items__title')
+            .contains('語言')
+        cy.get(':nth-child(2) > .no-border > .panal__items__title')
+            .contains('相機掃描')
+    })
+})

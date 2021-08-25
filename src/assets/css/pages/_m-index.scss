@@ -1,0 +1,65 @@
+.p-mobile-index {
+  height: 100%;
+
+  .navbar {
+    align-items: center;
+    background-color: $primary-color;
+    display: flex;
+    height: 50px;
+    padding: 0 15px;
+    width: 100%;
+
+    &__logo {
+      align-items: center;
+      display: flex;
+      height: 45px;
+      justify-content: center;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    &__menu-icon {
+      align-items: center;
+      color: #ffffff;
+      cursor: pointer;
+      display: flex;
+      font-size: 36px;
+      height: 100%;
+      justify-content: center;
+      margin-left: auto;
+      width: 35px;
+    }
+  }
+
+  .view {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100% - 50px);
+    padding: 15px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+    padding-top: 15px;
+  }
+
+  .ivu-form-item-label,
+  .ivu-input,
+  .ivu-select-input {
+    font-size: 16px !important;
+  }
+}
+
+.pm-module {
+  .navbar {
+    background-color: #262626;
+
+    &__logo {
+      height: 30px;
+    }
+  }
+}

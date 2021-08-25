@@ -1,0 +1,68 @@
+.p-attached-images-modal {
+  .ivu-modal {
+    top: 55px;
+  }
+
+  .img-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 25px;
+
+    &__item {
+      cursor: pointer;
+      height: 168px;
+      margin-bottom: 40px;
+      margin-right: 20px;
+      overflow-y: hidden;
+      position: relative;
+      width: 300px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__item__mask {
+      background-color: #000000;
+      height: 100%;
+      left: 0;
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      transition: opacity 0.3s;
+      width: 100%;
+      z-index: 5;
+
+      &:hover {
+        opacity: 0;
+      }
+    }
+  }
+
+  .slick-slide {
+    img {
+      height: 500px;
+      margin: 10px auto;
+    }
+  }
+
+  button .slick-prev::before,
+  button .slick-next::before {
+    color: #707070 !important;
+    font-size: 32px;
+  }
+
+  .slick-prev {
+    left: -25px;
+    z-index: 5;
+  }
+
+  .slick-next {
+    right: -13px;
+    z-index: 5;
+  }
+
+  .slick-dots {
+    bottom: -12px;
+  }
+}
